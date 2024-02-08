@@ -85,5 +85,10 @@ public static class MathUtils
         return t >= 0 && t <= 1;
     }
 
+    public static bool IsLinearDependent(Vector2 v, Vector2 w)
+    {
+        var c = v / w;
+        return Mathf.Approximately(c.x, c.y);
+    }
 
 }
