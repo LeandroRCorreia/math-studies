@@ -21,7 +21,7 @@ public class VectorBasisVisualizer : MonoBehaviour
         Vector2 vTransformed = v.x * i + v.y * j;
         GizmosUtils.DrawVectorAtOrigin(vTransformed);
         
-        textInfo.text = $"v = {v}\ni = {i}\nj = {j}\nLD = {MathUtils.IsLinearDependent(i, j)}";
+        textInfo.text = $"v = {vTransformed}\ni = {i}\nj = {j}\nLD = {MathUtils.IsLinearDependent(i, j)}";
     }
 
     private void DrawVectorBasis()
