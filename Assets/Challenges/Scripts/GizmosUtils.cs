@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public static class GizmosUtils 
@@ -62,5 +61,4 @@ public static class GizmosUtils
             DrawRay(pos + direction, left * arrowHeadLength, thickness);
         }
     }
-
 }
